@@ -61,3 +61,13 @@ web/
 
 ## Next steps
 - See `docs/PROJECT_PLAN.md` for milestones (PWA, inventory, basic combat).
+
+### How to test A2HS
+Dev server: `cd web && npm run dev`
+- Note: service workers are most reliable with a production build:
+  - `npm run build && npm run preview`
+
+Android/Chrome:
+- Open LAN URL → Chrome menu → Install app (or Add to Home screen).
+iOS/Safari:
+- Open LAN URL → Share → Add to Home Screen.

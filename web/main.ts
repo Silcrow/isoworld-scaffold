@@ -21,3 +21,13 @@ const config: Phaser.Types.Core.GameConfig = {
 
 // eslint-disable-next-line no-new
 new Phaser.Game(config)
+
+// Register service worker (A2HS)
+if ('serviceWorker' in navigator) {
+  // During dev with Vite, SW works best on the preview/production build.
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js')
+      .catch((err) => console.error('SW registration failed', err))
+  })
+}
