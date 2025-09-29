@@ -1,0 +1,32 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node/Vite/Phaser (any subfolder)
+**/node_modules/
+**/dist/
+**/.vite/
+**/.cache/
+**/.parcel-cache/
+**/coverage/
+
+# Env files (keep a committed .env.example instead)
+.env
+.env.*.local
+.env.local
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Godot (if added later)
+**/.godot/
+**/.import/
+**/export/*
